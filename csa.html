@@ -1,0 +1,103 @@
+<!--this is my csa page-->
+
+<!DOCTYPE html>
+<html lang ="en"> 
+    
+<head>
+<meta charset="UTF-8"> 
+<title>Computer System Architecture</title>
+<link rel ="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+
+ <nav>
+    <button class="menu-btn" aria-label="Toggle menu"
+        onclick="document.getElementById('menu').classList.toggle('open')">
+        &#9776; Menu
+    </button>
+
+    <div id="menu" class="menu">
+        <a href="index.html">Home</a>
+        <a href="info.html">Info Systems</a>
+        <a href="agile.html">Agile Projects</a>
+        <a href="data.html">Data Concepts</a>
+        <a href="uxui.html">UX/UI</a>
+        <a href="csa.html">Computer Architecture</a>
+        <a href="programming.html">Programming</a>
+        <a href="webdev.html">Web Development</a>
+        <a href="itct.html">IT Concepts</a>
+        
+    </div>
+</nav>
+
+<div class="container centred">
+<h1>Computer System Architecture</h1>
+<h2>Semester 2 Class 2026</h2>
+
+<h3> What the class was about </h3>
+<p>ITCS5.100 Computer Systems Architecture taught me how to plan, construct, optimise, and maintain a modern PC-based computer system, using safe and 
+    effective industry practices. I covered computer hardware, health and safety, documentation and diagram interpretation, problem solving, diagnostics
+    and benchmarking, operating systems, security, networking, and firewalls. The practical assessment (70% of the grade) was split into two parts.
+    Part 1 was assembling and troubleshooting a PC, and Part 2 was scripting and operating system maintenance. For each part I completed five labs in a 
+    small team, submitting my own write-up each week. A final test (30%) covered all the topics.</p>
+
+<h3>What I learnt</h3>
+<p>
+
+In this course I learned how the parts of a computer fit together and how to choose hardware for a purpose and budget, planning both an entry-level system 
+and a custom power-user PC and justifying my component choices. I learned the practical side of being a technician, including safe component replacement,
+cleaning and maintenance routines, and ergonomic workstation design, and I learned to write system administration documentation in Markdown and troubleshoot
+faults systematically by recording symptoms, causes, effects, and solutions. I also learned how diagnostic and benchmarking tools help find and fix problems,
+and how operating systems manage processes, scheduling, and security. In the second half, I learned how security tools such as Kali Linux and nmap are used 
+to scan networks and find open ports, and how to automate network checks and manage firewall rules and logging with PowerShell, batch scripts, and
+command-line tools like netsh, auditpol, and wevtutil. I also saw how protocols such as SNMP are used to monitor devices, and why firewalls and end-point
+protection sit outside penetration-testing toolsets.</p>
+
+<h3>What I achieved</h3>
+<p> In Part 1, I started with a hardware investigation of an old EIT PC. I identified its Intel AF82801JDO (ICH10 DO) chipset,
+    compared the block diagrams of the Intel P45 and G33 chipsets, and compared the chipset's specification with how it is implemented on the board.
+    I also researched supported processor families with their S-SPEC codes, the impact of ARM processors, and memory standards, speeds, bandwidth, latency,
+    and timing. For computer assembly, I recommended three entry-level laptops close to the NZ$1500 target (the ASUS Vivobook 16, Lenovo ThinkBook 16 Gen 9,
+    and Dell 15 DC15250). I also planned a custom VR and video-editing PC, centred on a Ryzen 9 9950X, an RTX 5070 Ti, 64GB of RAM, and an 850W power supply,
+    with a full parts list costing NZ$7,162.39 including shipping. I explained my component choices and how I would check compatibility.
+    In the health and safety lab, I listed user-replaceable parts, pre-replacement steps, and a technician's toolkit. I also covered cleaning routines
+    for computers, monitors, and shared peripherals, and the risks of using an air compressor, and I drew an ergonomic workstation layout in draw.io. 
+    For documentation, I wrote a step-by-step Markdown guide, with screenshots, to install Windows 11 Pro in an Oracle VirtualBox virtual machine.
+    In the problem-solving lab, I documented five build faults (RAM, CPU, GPU, PSU, and SSD installation issues) using a symptoms, causes, effects, 
+    and solutions format, and identified five faults that could cause a working PC to fail. In the diagnostics lab, I explained the role of Hiren's 
+    BootCD and demonstrated Task Manager, the Windows Memory Diagnostic tool, PowerShell, and Command Prompt with screenshots.
+
+     In Part 2, I explained why firewalls and end-point protection aren't part of Kali Linux, and I identified five Kali tools that could be scripted for
+     end-point protection (ClamAV, Rootkit Hunter, chkrootkit, Lynis, and YARA). I installed nmap and wrote a PowerShell script that scans my local network
+     for devices and open ports and saves the results to a file. I then identified a selection of Windows, NirSoft, and Sysinternals network tools and wrote
+     a NetworkAudit.ps1 script that saves my network settings to a text file. I set it up in Task Scheduler to run at logon and after a group policy update,
+     and I tested it with gpupdate /force. For protocols, I used Wireshark to capture 60 seconds of traffic on my Wi-Fi connection, identified 18 protocols
+     (including QUIC, TCP, UDP, DNS, TLS, ARP, and mDNS), and described what each one does. In the final lab, I wrote a script that uses netsh to forward port
+     80 to 8080 on my local address, enables firewall logging, and uses wevtutil to export firewall-related security events to a text file. Every lab was
+     documented with screenshots, my scripts, and APA references.</p>
+
+
+<h3> Reflections </h3>
+<p>
+I came into this course with almost no hands-on hardware knowledge, and I was upfront about that in my first labs, so I'm proud of how far I've come, 
+from identifying a chipset on an old PC to writing scripts that scan a network, schedule an audit, and configure firewall settings. Writing the Windows 11 
+installation guide in Markdown taught me how much clear, step-by-step documentation matters, because every missed screenshot or step made the guide harder 
+to follow. I found scripting the most challenging part, especially making PowerShell scripts run correctly and trigger on a schedule, and I relied on AI tools 
+and online guides to get started, so I'd like to practise writing and debugging scripts on my own until I fully understand each line. In my firewall lab,
+my script ran but found no firewall events to export, which taught me that a result of "nothing found" still needs to be checked and explained rather 
+than assumed to be a success. I also learned to be careful when researching hardware, because chipset and memory details varied between sources,
+so next time I'd verify specifications against manufacturer documentation. Overall, this course gave me practical confidence with the tools technicians 
+use and showed me how hardware, scripting, security, and networking connect, which will help me in a future support or system administration role.</p>
+
+ <h3> Overall Class Grade</h3>
+ <p> Not recieved yet. </p>
+</div>
+
+
+</body>
+
+</html>

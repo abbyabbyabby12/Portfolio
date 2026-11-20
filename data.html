@@ -1,0 +1,96 @@
+<!--this is my data concepts page-->
+
+<!DOCTYPE html>
+<html lang ="en"> 
+    
+<head>
+<meta charset="UTF-8"> 
+<title>Data Concepts</title>
+<link rel ="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+<nav>
+    <button class="menu-btn" aria-label="Toggle menu"
+        onclick="document.getElementById('menu').classList.toggle('open')">
+        &#9776; Menu
+    </button>
+
+    <div id="menu" class="menu">
+        <a href="index.html">Home</a>
+        <a href="info.html">Info Systems</a>
+        <a href="agile.html">Agile Projects</a>
+        <a href="data.html">Data Concepts</a>
+        <a href="uxui.html">UX/UI</a>
+        <a href="csa.html">Computer Architecture</a>
+        <a href="programming.html">Programming</a>
+        <a href="webdev.html">Web Development</a>
+        <a href="itct.html">IT Concepts</a>
+        
+    </div>
+</nav>
+
+<div class="container centred">
+<h1>Data Concepts</h1>
+<h2>Semester 1 Class 2026</h2>
+ <h3> What the class was about </h3>
+ <p>ITDT5.228 Introduction to Data Concepts covered how data is represented, structured, coded,
+     stored, and protected. The weekly topics were number systems (binary, octal, hexadecimal, and base conversion),
+    Boolean logic and truth tables, data structures (arrays, linked lists, stacks, queues, trees, and graphs), coding systems and barcodes,
+    and character encoding (ASCII) and hash tables. The practical assignment followed a database for a fictional event company, Armageddon Expos, 
+    through four parts. It began with entity relationship design and business rules, then moved to improving the ERD, then to building the database 
+    with SQL (DDL and DML), and finished with a research report on legal and ethical issues under the NZ Privacy Act 2020.</p>
+
+    <h3>What I learnt</h3>
+    <p> I learned how computers represent and process data at a basic level. I could count and convert between number systems,
+         use Boolean operators and truth tables to make binary decisions and query data, and explain how different data structures
+          organise data for different jobs. I also learned how coding systems like bank account numbers, room codes, and barcodes pack meaning 
+          into a compact format, and how ASCII and hash functions turn characters into numbers that index data quickly.
+
+        In the database work, I learned to design before building. I identified entities, primary keys, attributes, and foreign keys,
+        and described business rules and cardinality between entities. I learned why many-to-many relationships cause duplicated and incorrect
+        results in relational databases, and how junction (bridge) tables resolve them into one-to-many relationships. I also learned to choose
+        appropriate data types and keep naming consistent. In SQL, I learned to create a database and tables, insert and update records, and write
+        queries that filter, sort, group, count, and calculate values. In the privacy research, I learned how the 13 Privacy Act 2020 principles apply
+        to a real organisation's data and how to support points with APA references.</p>
+
+    <h3>What I achieved</h3>
+    <p>Across the four practical parts, I designed, built, and researched a database for Armageddon Expos. In Part 1, I defined the entities
+         (Attendees, Tickets, Venues, Exhibitors, Stalls, Events, Celebrity Guests, and Categories) with their primary keys and attributes, and 
+         wrote business rules describing how they relate. In Part 2, I improved the ERD by resolving the many-to-many relationships with bridge tables, 
+         adding a Sponsor entity with an EventSponsorship table for sponsorship amounts, signage, branding, and ticket allocations, and adding Staff and
+          Rosters to cover staff working at events.
+
+        In Part 3, I turned the ERD into a working MySQL database called dbARMAGEDDON, creating all 15 tables with primary keys, foreign keys, and
+        constraints such as NOT NULL and CHECK rules. I imported data from CSV files, inserted and updated staff and roster records, and wrote queries that
+        sorted and filtered staff, detected incorrectly entered names using a pattern match, calculated afternoon pay rates, and used joins and GROUP BY to 
+        list staff by station and event and count staff and events. Each task was documented with the SQL, screenshots of the results, and a full script.
+        In Part 4, I wrote a research report relating the 13 Privacy Act 2020 principles to Armageddon's data, summarised three NZ privacy breaches
+        (Latitude, ACC, and Manage My Health), and recommended two compliance actions: strong database security with role-based access controls,
+        and privacy training with clear privacy policies. I supported this with APA references. </p>
+
+
+    <h3> Reflections </h3>
+    <p> This course showed me that data work covers more than storing and querying information. It also means designing structures carefully, understanding
+        how data is represented, and keeping it safe. Working through the Armageddon database from ERD to SQL showed me why careful design matters, and that
+        small details count when building tables, such as creating them in dependency order and making sure foreign keys point to the correct table names.
+        I found writing queries that combine several tables, filters, and calculations the most challenging part, so I'd like to keep practising joins,
+        grouping, and checking results against expected output. The privacy research changed how I think about design, because security, retention, and
+        access controls need to be planned from the start rather than added later. Together with my SQL and design skills, that perspective will help me
+        build and manage systems that are both useful and responsible with people's information.</p>
+
+
+  <h3> Overall Class Grade (unofficial) </h3>
+ <p> The overall course grade I recieved for this course was a 85% which is an A </p>
+
+
+
+</div>
+
+
+</body>
+
+</html>
